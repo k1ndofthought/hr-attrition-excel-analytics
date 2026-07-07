@@ -25,9 +25,16 @@ The full data pipeline is built across separate transactional layers in the [`IB
 * Created an interactive internal search dashboard utilizing the modern `=XLOOKUP` framework.
 * Generates live, single-line data extractions: typing an individual `Employee ID` instantly returns their exact Department, localized Job Role, and monthly income matrix from the core data tab without executing heavy queries.
 
+![Interactive XLOOKUP Dashboard](./dashboard.png)
+
 ### 3. Aggregate Executive Summary Layer (`Sheet2` & `Sheet3`)
 * **View 1 (Attrition Velocity)**: Aggregated overall employee headcount alongside custom `Average of AttritionBinary` metrics. This pinpointed that the **Sales** (~20.6%) and **Human Resources** (~19.0%) departments suffer from the highest turnover rates, compared to Research & Development (~13.8%).
+
+![Department Attrition Pivot Table](./pivottable_attrition.png)
+
 * **View 2 (Compensation Hierarchy)**: Constructed an organizational wage matrix grouping positions by `JobRole` and tracking `Average` vs. `Maximum` incomes. This clearly ranks corporate salary floors, proving **Managers** command the highest structural averages (\$17,181.68) while **Sales Representatives** form the base (\$2,626.00).
+
+![Job Role Income Pivot Table](./pivottable_income.png)
 
 ---
 
